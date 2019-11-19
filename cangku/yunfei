@@ -1,0 +1,513 @@
+
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>
+
+</title><link href="../../../../style/base.css" rel="stylesheet" /><link href="FreightRule.css" rel="stylesheet" />
+    <script src="FreightRule.js?t=3.5"></script>
+    <style>
+        .v-tab
+        {
+            width: 200px;
+        }
+
+        .tab.v-tab, .tabbar.v-tab
+        {
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <form method="post" action="./FreightRule.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJOTkxNDcxNTg1ZGRJgxw70vX1H9x8YIbQTCBIwNoOgg==" />
+</div>
+
+<script language="javascript" id="Hxj_Web_UI_Script_jquery-1_8_0_js" type="text/javascript" src="/WebResource.axd?d=ljbvqvxJUbwTntm5VbTyzwkpxMKTCuG1aan6KkOwhLh8oZEHBeQawl1c60DxRtEjg_XardPL9yG-lCb-xwDRnFmVJQcrJL0UD9gJ325JM2fmDY9-wMl9RTYbOY41&t=637073643810000000"></script><script language="javascript" id="Hxj_Web_UI_Script_jquery_json-2_4_js" type="text/javascript" src="/WebResource.axd?d=lzZONyW3zNrnH2B7crjf8_7iz9jxhh8b8MQB6-8c_SkP3huVYcNIqFFCFShQQWl43F_2AVPdMy_TfnTiT7YAC-JpajCEReMHxby7rsQYDup85f5VEjtMYrGrw8U1&t=637073643810000000"></script><link id="Hxj_Web_UI_Css_jquery_css" href="/WebResource.axd?d=KAqzuM_1S7zjB7mwXE9DrE1FuyYvr72LmgdNPG-w9sUOtoMTidEttzJHErCRZnLGqN8-cEUwpdwFHrqh2R3GkyYvQGTtqbdQ7z6vg-_bUJWKXBX60&t=637073643810000000" rel="stylesheet" type="text/css"/><script language="javascript" id="Hxj_Web_UI_Script_hxj-jquery-1_0_0_js" type="text/javascript" src="/WebResource.axd?d=pGL4zAxN02HyoXuMxw6bT86q5RNF1QAiydkf3U2WgwVI1rd-DtzbIHSES2-AextlWdiPv1MYHRJWlApIdHxFfvnahZNs0R4r71HRogH_3osypEAqzavfdeGQ3_U1&t=637073643810000000"></script><link id="wulong.iconfont" href="https://at.alicdn.com/t/font_816790_nxi2aehu5gi.css" rel="stylesheet" type="text/css"/><script language="javascript" id="Hxj.Web.UI.ACall_CallPage" type="text/javascript" >var _Call_PostForm={};function _CallPage(method,oArgs){var oPostArg=oArgs;if(arguments.length>2){var oPostArg=new Array();for(var iAa1=1;iAa1<arguments.length;iAa1++){if(arguments[iAa1]==null){oPostArg.push(null);}else{oPostArg.push(arguments[iAa1].toString());}}};return $.call('ACall1',oPostArg,method,'{page}',null,true)}</script><script language="javascript" id="Hxj.Web.UI.ACall_AsyncCallPage" type="text/javascript" >function _AsyncCallPage(method,callBack,showWait,oArgs){var oPostArg=oArgs;if(arguments.length>4){var oPostArg=new Array();for(var iAa1=3;iAa1<arguments.length;iAa1++){if(arguments[iAa1]==null){oPostArg.push(null);}else{oPostArg.push(arguments[iAa1].toString());}}};return $.call('ACall1',oPostArg,method,'{page}',callBack,showWait)}; function _ACP(method,callBack,oArgs){var oPostArg=oArgs;if(arguments.length>2){var oPostArg=new Array();for(var iAa1=2;iAa1<arguments.length;iAa1++){if(arguments[iAa1]==null){oPostArg.push(null);}else{oPostArg.push(arguments[iAa1].toString());}}};return $.call('ACall1',oPostArg,method,'{page}',callBack,true)}</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A85E60B2" />
+</div>
+        
+<link href="/Style/float.css?t=190413" rel="stylesheet" />
+<script src="/Script/float.js?t=190829" type="text/javascript"></script>
+  <table cellpadding="0" cellspacing="0" id="float_top"  style="display:none;">
+    <tr>
+        <td style="padding-bottom:0px;vertical-align:middle;">
+            <center>
+                <table cellpadding="0" cellspacing="0" id="float_table">
+                    <tr>
+                        <td style="vertical-align:top;">
+                         
+
+                            <iframe id="float_frame" name="float_frame"  frameborder="0" class="_float_box" ></iframe>
+                            <div class="_opacity"> </div>
+                        </td>
+                    </tr>
+                </table>
+
+            </center>
+        </td>
+    </tr>
+</table>
+
+        <table style="width: 100%; height: 100%; background-color: #f9f9f9;">
+            <tr>
+                
+
+                <td style="vertical-align: top;">
+                    <div class="full" style="overflow: auto; padding: 10px;">
+                        <div style="background-color: #fff; padding: 10px; border: 1px solid #eee;">
+
+                            
+                            <div style="margin-top: 12px;">
+                                <span class="title">无需物流</span>
+                            </div>
+                            
+                            <div><span class="label_text">没有设定模板</span><span onclick="AddNew('DUMMY')" class="btn">创建新的运费模板</span></div>
+                            
+                            <div style="margin-top: 12px;">
+                                <span class="title">EMS</span>
+                            </div>
+                            
+                            <div><span class="label_text">没有设定模板</span><span onclick="AddNew('EMS')" class="btn">创建新的运费模板</span></div>
+                            
+                            <div style="margin-top: 12px;">
+                                <span class="title">申通E物流</span>
+                            </div>
+                            
+                            <div class="b_p">
+                                <div class="default_set">
+                                    <div>
+                                        <table cellpadding="0" cellspacing="0" border="1" class="fr">
+                                            <tr>
+                                                <td colspan="6" class="fr_h">
+                                                    <span onclick="Copy('STO','')" class="btn_line">复制</span>
+                                                    <span onclick="AddNew('STO')" class="btn_line">修改</span>
+                                                    <span onclick="Del('STO')" style="margin-left: 10px;" class="btn_line">删除</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="h_auto">运送到
+                                                </td>
+                                                <td class="h " title="限定重量范围的价格设定优先级高于不限重量的默认范围。限定重量指只有当订单的重量在指定重量范围内才计算费用" style="width: 150px">
+                                                    <span class="help">限定重量范围(kg)</span>
+                                                </td>
+                                                <td class="h">首重(kg)
+                                                </td>
+                                                <td class="h">首费(元)
+                                                </td>
+                                                <td class="h">续重(kg)
+                                                </td>
+                                                <td class="h">续费(元)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="b_d">全国(默认)
+                                                </td>
+                                                <td class="b">（不限）
+                                                </td>
+                                                <td class="b">1.0000
+                                                </td>
+                                                <td class="b">4.40
+                                                </td>
+                                                <td class="b">0.0000
+                                                </td>
+                                                <td class="b">0.00
+                                                </td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td class="b_d" rowspan="1"><span class='state_nocity'>上海</span>
+                                                </td>
+                                                <td class="b">（不限）
+                                                </td>
+                                                <td class="b">1.0000
+                                                </td>
+                                                <td class="b">4.90
+                                                </td>
+                                                <td class="b">1.0000
+                                                </td>
+                                                <td class="b">0.00
+                                                </td>
+                                            </tr>
+                                            
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div style="margin-top: 12px;">
+                                <span class="title">邮政快递包裹</span>
+                            </div>
+                            
+                            <div><span class="label_text">没有设定模板</span><span onclick="AddNew('POSTB')" class="btn">创建新的运费模板</span></div>
+                            
+                            <div style="margin-top: 12px;">
+                                <span class="title">顺丰速运</span>
+                            </div>
+                            
+                            <div><span class="label_text">没有设定模板</span><span onclick="AddNew('SF')" class="btn">创建新的运费模板</span></div>
+                            
+                            <div style="margin-top: 12px;">
+                                <span class="title">圆通速递</span>
+                            </div>
+                            
+                            <div class="b_p">
+                                <div class="default_set">
+                                    <div>
+                                        <table cellpadding="0" cellspacing="0" border="1" class="fr">
+                                            <tr>
+                                                <td colspan="6" class="fr_h">
+                                                    <span onclick="Copy('YTO','')" class="btn_line">复制</span>
+                                                    <span onclick="AddNew('YTO')" class="btn_line">修改</span>
+                                                    <span onclick="Del('YTO')" style="margin-left: 10px;" class="btn_line">删除</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="h_auto">运送到
+                                                </td>
+                                                <td class="h " title="限定重量范围的价格设定优先级高于不限重量的默认范围。限定重量指只有当订单的重量在指定重量范围内才计算费用" style="width: 150px">
+                                                    <span class="help">限定重量范围(kg)</span>
+                                                </td>
+                                                <td class="h">首重(kg)
+                                                </td>
+                                                <td class="h">首费(元)
+                                                </td>
+                                                <td class="h">续重(kg)
+                                                </td>
+                                                <td class="h">续费(元)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="b_d">全国(默认)
+                                                </td>
+                                                <td class="b">（不限）
+                                                </td>
+                                                <td class="b">1.0000
+                                                </td>
+                                                <td class="b">8.00
+                                                </td>
+                                                <td class="b">1.0000
+                                                </td>
+                                                <td class="b">2.00
+                                                </td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td class="b_d" rowspan="1"><span class='state_nocity'>内蒙古</span>、<span class='state_nocity'>新疆</span>
+                                                </td>
+                                                <td class="b">（不限）
+                                                </td>
+                                                <td class="b">1.0000
+                                                </td>
+                                                <td class="b">18.00
+                                                </td>
+                                                <td class="b">1.0000
+                                                </td>
+                                                <td class="b">15.00
+                                                </td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td class="b_d" rowspan="1"><span class='state_nocity'>西藏</span>
+                                                </td>
+                                                <td class="b">（不限）
+                                                </td>
+                                                <td class="b">1.0000
+                                                </td>
+                                                <td class="b">20.00
+                                                </td>
+                                                <td class="b">1.0000
+                                                </td>
+                                                <td class="b">15.00
+                                                </td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td class="b_d" rowspan="1"><span class='state_nocity'>甘肃</span>、<span class='state_nocity'>宁夏</span>、<span class='state_nocity'>青海</span>
+                                                </td>
+                                                <td class="b">（不限）
+                                                </td>
+                                                <td class="b">1.0000
+                                                </td>
+                                                <td class="b">15.00
+                                                </td>
+                                                <td class="b">1.0000
+                                                </td>
+                                                <td class="b">12.00
+                                                </td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td class="b_d" rowspan="1"><span class='state_nocity'>北京</span>、<span class='state_nocity'>天津</span>、<span class='state_nocity'>山西</span>、<span class='state_nocity'>山东</span>、<span class='state_nocity'>河北</span>、<span class='state_nocity'>河南</span>、<span class='state_nocity'>海南</span>、<span class='state_nocity'>辽宁</span>、<span class='state_nocity'>吉林</span>、<span class='state_nocity'>黑龙江</span>、<span class='state_nocity'>重庆</span>、<span class='state_nocity'>云南</span>、<span class='state_nocity'>贵州</span>、<span class='state_nocity'>四川</span>、<span class='state_nocity'>陕西</span>
+                                                </td>
+                                                <td class="b">（不限）
+                                                </td>
+                                                <td class="b">1.0000
+                                                </td>
+                                                <td class="b">12.00
+                                                </td>
+                                                <td class="b">1.0000
+                                                </td>
+                                                <td class="b">8.00
+                                                </td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td class="b_d" rowspan="1"><span class='state_nocity'>上海</span>、<span class='state_nocity'>江苏</span>、<span class='state_nocity'>浙江</span>、<span class='state_nocity'>安徽</span>、<span class='state_nocity'>江西</span>、<span class='state_nocity'>湖南</span>、<span class='state_nocity'>湖北</span>、<span class='state_nocity'>广西</span>、<span class='state_nocity'>福建</span>
+                                                </td>
+                                                <td class="b">（不限）
+                                                </td>
+                                                <td class="b">1.0000
+                                                </td>
+                                                <td class="b">12.00
+                                                </td>
+                                                <td class="b">1.0000
+                                                </td>
+                                                <td class="b">6.00
+                                                </td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td class="b_d" rowspan="1"><span class='state_nocity'>广东</span>
+                                                </td>
+                                                <td class="b">（不限）
+                                                </td>
+                                                <td class="b">1.0000
+                                                </td>
+                                                <td class="b">8.00
+                                                </td>
+                                                <td class="b">1.0000
+                                                </td>
+                                                <td class="b">2.00
+                                                </td>
+                                            </tr>
+                                            
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div style="margin-top: 12px;">
+                                <span class="title">韵达快运</span>
+                            </div>
+                            
+                            <div class="b_p">
+                                <div class="default_set">
+                                    <div>
+                                        <table cellpadding="0" cellspacing="0" border="1" class="fr">
+                                            <tr>
+                                                <td colspan="6" class="fr_h">
+                                                    <span onclick="Copy('YUNDA','')" class="btn_line">复制</span>
+                                                    <span onclick="AddNew('YUNDA')" class="btn_line">修改</span>
+                                                    <span onclick="Del('YUNDA')" style="margin-left: 10px;" class="btn_line">删除</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="h_auto">运送到
+                                                </td>
+                                                <td class="h " title="限定重量范围的价格设定优先级高于不限重量的默认范围。限定重量指只有当订单的重量在指定重量范围内才计算费用" style="width: 150px">
+                                                    <span class="help">限定重量范围(kg)</span>
+                                                </td>
+                                                <td class="h">首重(kg)
+                                                </td>
+                                                <td class="h">首费(元)
+                                                </td>
+                                                <td class="h">续重(kg)
+                                                </td>
+                                                <td class="h">续费(元)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="b_d">全国(默认)
+                                                </td>
+                                                <td class="b">（不限）
+                                                </td>
+                                                <td class="b">1.0000
+                                                </td>
+                                                <td class="b">3.80
+                                                </td>
+                                                <td class="b">0.0000
+                                                </td>
+                                                <td class="b">0.00
+                                                </td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td class="b_d" rowspan="1"><span class='state_nocity'>西藏</span>、<span class='state_nocity'>新疆</span>
+                                                </td>
+                                                <td class="b">（不限）
+                                                </td>
+                                                <td class="b">1.0000
+                                                </td>
+                                                <td class="b">10.00
+                                                </td>
+                                                <td class="b">1.0000
+                                                </td>
+                                                <td class="b">0.00
+                                                </td>
+                                            </tr>
+                                            
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div style="margin-top: 12px;">
+                                <span class="title">中通速递</span>
+                            </div>
+                            
+                            <div class="b_p">
+                                <div class="default_set">
+                                    <div>
+                                        <table cellpadding="0" cellspacing="0" border="1" class="fr">
+                                            <tr>
+                                                <td colspan="6" class="fr_h">
+                                                    <span onclick="Copy('ZTO','')" class="btn_line">复制</span>
+                                                    <span onclick="AddNew('ZTO')" class="btn_line">修改</span>
+                                                    <span onclick="Del('ZTO')" style="margin-left: 10px;" class="btn_line">删除</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="h_auto">运送到
+                                                </td>
+                                                <td class="h " title="限定重量范围的价格设定优先级高于不限重量的默认范围。限定重量指只有当订单的重量在指定重量范围内才计算费用" style="width: 150px">
+                                                    <span class="help">限定重量范围(kg)</span>
+                                                </td>
+                                                <td class="h">首重(kg)
+                                                </td>
+                                                <td class="h">首费(元)
+                                                </td>
+                                                <td class="h">续重(kg)
+                                                </td>
+                                                <td class="h">续费(元)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="b_d">全国(默认)
+                                                </td>
+                                                <td class="b">（不限）
+                                                </td>
+                                                <td class="b">1.0000
+                                                </td>
+                                                <td class="b">8.00
+                                                </td>
+                                                <td class="b">1.0000
+                                                </td>
+                                                <td class="b">2.00
+                                                </td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td class="b_d" rowspan="1"><span class='state_nocity'>广东</span>
+                                                </td>
+                                                <td class="b">（不限）
+                                                </td>
+                                                <td class="b">1.0000
+                                                </td>
+                                                <td class="b">8.00
+                                                </td>
+                                                <td class="b">1.0000
+                                                </td>
+                                                <td class="b">2.00
+                                                </td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td class="b_d" rowspan="1"><span class='state_nocity'>上海</span>、<span class='state_nocity'>江苏</span>、<span class='state_nocity'>浙江</span>、<span class='state_nocity'>安徽</span>、<span class='state_nocity'>江西</span>、<span class='state_nocity'>湖南</span>、<span class='state_nocity'>湖北</span>、<span class='state_nocity'>广西</span>、<span class='state_nocity'>福建</span>
+                                                </td>
+                                                <td class="b">（不限）
+                                                </td>
+                                                <td class="b">1.0000
+                                                </td>
+                                                <td class="b">12.00
+                                                </td>
+                                                <td class="b">1.0000
+                                                </td>
+                                                <td class="b">6.00
+                                                </td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td class="b_d" rowspan="1"><span class='state_nocity'>北京</span>、<span class='state_nocity'>天津</span>、<span class='state_nocity'>山西</span>、<span class='state_nocity'>山东</span>、<span class='state_nocity'>河北</span>、<span class='state_nocity'>河南</span>、<span class='state_nocity'>海南</span>、<span class='state_nocity'>辽宁</span>、<span class='state_nocity'>吉林</span>、<span class='state_nocity'>黑龙江</span>、<span class='state_nocity'>重庆</span>、<span class='state_nocity'>云南</span>、<span class='state_nocity'>贵州</span>、<span class='state_nocity'>四川</span>、<span class='state_nocity'>陕西</span>
+                                                </td>
+                                                <td class="b">（不限）
+                                                </td>
+                                                <td class="b">1.0000
+                                                </td>
+                                                <td class="b">12.00
+                                                </td>
+                                                <td class="b">1.0000
+                                                </td>
+                                                <td class="b">8.00
+                                                </td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td class="b_d" rowspan="1"><span class='state_nocity'>内蒙古</span>、<span class='state_nocity'>新疆</span>
+                                                </td>
+                                                <td class="b">（不限）
+                                                </td>
+                                                <td class="b">1.0000
+                                                </td>
+                                                <td class="b">18.00
+                                                </td>
+                                                <td class="b">1.0000
+                                                </td>
+                                                <td class="b">15.00
+                                                </td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td class="b_d" rowspan="1"><span class='state_nocity'>西藏</span>
+                                                </td>
+                                                <td class="b">（不限）
+                                                </td>
+                                                <td class="b">1.0000
+                                                </td>
+                                                <td class="b">20.00
+                                                </td>
+                                                <td class="b">1.0000
+                                                </td>
+                                                <td class="b">15.00
+                                                </td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td class="b_d" rowspan="1"><span class='state_nocity'>甘肃</span>、<span class='state_nocity'>宁夏</span>、<span class='state_nocity'>青海</span>
+                                                </td>
+                                                <td class="b">（不限）
+                                                </td>
+                                                <td class="b">1.0000
+                                                </td>
+                                                <td class="b">15.00
+                                                </td>
+                                                <td class="b">1.0000
+                                                </td>
+                                                <td class="b">12.00
+                                                </td>
+                                            </tr>
+                                            
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        
+        <script type="text/javascript">
+            var _Partners=[];
+        </script>
+    </form>
+</body>
+</html>
